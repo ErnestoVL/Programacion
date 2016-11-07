@@ -40,7 +40,7 @@ bool esBisiesto (int anyo){
 int solicitaDia(int anyo, int mes, int& dia, string msg){
 	cout <<msg;
 	cin >> dia;
-	if (dia<1 || dia>31){
+	if (dia<1 || dia>31){   //El problema es que no se como simplificar los if
 		cout <<"ERROR: El dia introducido no es válido" <<endl;
 		solicitaDia(anyo, mes, dia, msg);
 	}
